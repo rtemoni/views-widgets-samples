@@ -59,10 +59,10 @@ class CardView(layoutInflater: LayoutInflater, container: ViewGroup?) {
 
     private fun getShade(card: Card): Int {
         when (card.value) {
-            "2", "6", "10", "A" -> return 2
-            "3", "7", "J" -> return 3
-            "4", "8", "Q" -> return 0
-            "5", "9", "K" -> return 1
+            "Settings", "Performance", "10", "A" -> return 2
+            "Train", "PT", "J" -> return 3
+            "Camera", "Messages", "Q" -> return 0
+            "Gallery", "9", "K" -> return 1
         }
         throw IllegalStateException("Card value cannot be $card.value")
     }

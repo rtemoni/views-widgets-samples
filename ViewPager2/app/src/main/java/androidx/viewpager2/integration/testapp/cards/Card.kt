@@ -47,7 +47,7 @@ class Card private constructor(val suit: String, val value: String) {
         internal val ARGS_BUNDLE = Card::class.java.name + ":Bundle"
 
         val SUITS = setOf("♣" /* clubs*/, "♦" /* diamonds*/, "♥" /* hearts*/, "♠" /*spades*/)
-        val VALUES = setOf("2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A")
+        val VALUES = setOf("Settings", "Train", "Camera", "Gallery", "Performance", "PT", "Messages")
         val DECK = SUITS.flatMap { suit ->
             VALUES.map { value -> Card(suit, value) }
         }
